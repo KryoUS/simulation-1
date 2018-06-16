@@ -1,0 +1,1 @@
+UPDATE vacationexpense SET expensetype = $2, description = $3, price = $4, link = $5 WHERE expenseid = $1;

@@ -1,0 +1,1 @@
+DELETE FROM vacationexpense WHERE expenseid = $1;

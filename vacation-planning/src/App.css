@@ -1,0 +1,163 @@
+a {
+  color: #007AA5;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #015b7c;
+  text-decoration: none;
+}
+
+.App {
+  text-align: center;
+  background: #141517;
+  height: 100vh;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40px;
+}
+
+.App-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  height: 40px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.addbutton {
+  margin: 15px;
+  padding: 10px 30px 10px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: bold;
+  background-color: #007AA5;
+  color: white;
+}
+
+.addbutton:hover {
+  margin: 15px;
+  padding: 10px 30px 10px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: bold;
+  background-color: #00455e;
+  color: white;
+  cursor: pointer;
+}
+
+.button {
+  margin: 5px;
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: bold;
+  background-color: #007AA5;
+  color: white;
+}
+
+.button:hover {
+  margin: 5px;
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: bold;
+  background-color: #00455e;
+  color: white;
+  cursor: pointer;
+}
+
+.form {
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.form-button {
+  margin: 15px;
+  padding: 10px 30px 10px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: bold;
+  background-color: #007AA5;
+  color: white;
+}
+
+.form-button:hover {
+  margin: 15px;
+  padding: 10px 30px 10px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: bold;
+  background-color: #00455e;
+  color: white;
+  cursor: pointer;
+}
+
+.form-input {
+  border: none;
+  margin: 15px;
+  font-size: 1vw;
+  border-bottom: 4px solid red;
+  background-color: #202125;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80vw;
+  background: #1B1C1F;
+}
+
+.table-flex {
+  margin: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+td {
+  text-align: left;
+  padding: 12px 30px 12px 30px;
+  color: #ABABAB;
+}
+
+th {
+  text-align: left;
+  padding: 12px 30px 12px 30px;
+  color: white;
+  font-size: 0.75vw;
+}
+
+tr:nth-child(even) {
+  background-color: #202125;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
