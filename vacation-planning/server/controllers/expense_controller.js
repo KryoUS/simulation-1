@@ -5,7 +5,6 @@ module.exports = {
 
         dbInstance.create_expense([username, expensetype, description, price, link])
             .then(response => {
-                console.log('response: ', response)
                 res.status(200).send(response)
             })
             .catch(error => {
@@ -25,14 +24,27 @@ module.exports = {
             });
     },
 
-    updateExpense: ( req, res, next) => {
+    getExpensesId: ( req, res, next) => {
         const dbInstance = req.app.get('db');
         const { id } = req.params;
 
-        dbInstance.update_expense([id])
+        dbInstance.read_expenses_id([id])
             .then(response => res.status(200).send(response))
             .catch(error => {
-                res.status(500).send({ ErrorMessage: `The condor has landed...` })
+                res.status(500).send({ ErrorMessage: 'Problem bub.' })
+                console.log(error)
+            });
+    },
+
+    updateExpense: ( req, res, next) => {
+        const dbInstance = req.app.get('db');
+        const { id } = req.params;
+        const { username, expensetype, description, price, link } = req.body;
+        
+        dbInstance.update_expense([id, username, expensetype, description, price, link])
+            .then(response => res.status(200).send(response))
+            .catch(error => {
+                res.status(500).send({ ErrorMessage: `The condor has landed, but not gracefully...` })
                 console.log(error)
             });
     },

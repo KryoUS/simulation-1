@@ -1,0 +1,1 @@
+SELECT expenseid, username, expensetype, description, price, link FROM vacationexpense WHERE expenseid = $1;

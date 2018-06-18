@@ -1,1 +1,1 @@
-UPDATE vacationexpense SET expensetype = $2, description = $3, price = $4, link = $5 WHERE expenseid = $1;
+UPDATE vacationexpense SET username = $2, expensetype = $3, description = $4, price = $5, link = $6 WHERE expenseid = $1;

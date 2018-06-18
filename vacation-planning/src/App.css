@@ -57,8 +57,9 @@ a:visited {
 }
 
 .button {
-  margin: 5px;
-  width: 20%;
+  height: 100%;
+  width: 100%;
+  padding: 8px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -68,8 +69,9 @@ a:visited {
 }
 
 .button:hover {
-  margin: 5px;
-  width: 20%;
+  height: 100%;
+  width: 100%;
+  padding: 8px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -125,6 +127,11 @@ a:visited {
   align-items: center;
 }
 
+.nav-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -151,6 +158,10 @@ th {
   padding: 12px 30px 12px 30px;
   color: white;
   font-size: 0.75vw;
+}
+
+tr {
+  height: 50px;
 }
 
 tr:nth-child(even) {

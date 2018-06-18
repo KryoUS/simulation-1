@@ -14,6 +14,7 @@ massive( process.env.CONNECTION_STRING ).then( dbInstance => {
 }).catch( error => console.log(`Something happened...`, error) );
 
 app.get(`/api/expenses`, expenseController.getExpenses);
+app.get(`/api/expenses/:id`, expenseController.getExpensesId);
 app.put(`/api/expenses/:id`, expenseController.updateExpense);
 app.post(`/api/expenses`, expenseController.createExpense);
 app.delete(`/api/expenses/:id`, expenseController.deleteExpense);
